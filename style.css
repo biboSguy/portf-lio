@@ -26,6 +26,7 @@ body {
 .titulo {
     text-align: center;
     font-size: x-large;
+    
 }
 
 .sobremim {
@@ -37,4 +38,9 @@ body {
 
 .projetos {
     text-align: center;
+}
+
+.titulo img{
+    border-radius: 40px;
+    box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.5);
 }
