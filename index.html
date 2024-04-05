@@ -14,34 +14,24 @@
         <nav>
             <ul>
                 <li>
-                    <a>Home</a>
+                    <a href="#home" onclick="scrollToId('titulo')">Home</a>
                 </li>
                 <li>
-                    <a>Sobre</a>
+                    <a href="#sobre" onclick="scrollToId('sobremim')">Sobre</a>
                 </li>
                 <li>
-                    <a>Projetos</a>
+                    <a href="#projeto" onclick="scrollToId('projeto')">Projetos</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <div cçass="esquerdo">
-            <h1>Seja bem-vindo!</h1>
-            <p>Esse é meu portfólio do curso de desenvolvimento de sistemas</p>
-        </div>
-        <div class="direito">
-            <img src="" alt="">
-        </div>
-    </section>
-
-    <div class="titulo">
+    <div class="titulo" id="titulo">
         <h1>Portfólio</h1>
         <p>Enzo Cassol De Déa</p>
-        <img src="enzo.jpeg" height="200" width="500">
+        <img src="enzo.jpeg" height="400" width="800">
     </div>
-    <div class="sobremim">
+    <div class="sobremim" id="sobremim">
         <div>
             <h1>Sobre mim</h1>
             <p>Meu nome é Enzo, eu tenho 16 anos, sou da turma 2C.</p>
@@ -49,11 +39,17 @@
         </div>
     </div>
 
-    <div class="projetos">
+    <div class="projetos" id="projeto">
+        <div>
         <h1>Projetos</h1>
         <p>Somente projetos insanos feitos pelo Enzo.</p>
-        <p>Projetos</p>
     </div>
+    <script>
+        function scrollToId(id) {
+            document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+        }
+
+    </script>
 </body>
 
 </html>
