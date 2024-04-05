@@ -5,6 +5,9 @@ header{
     padding: 5px 70px;
     justify-content: space-between;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 90%;
 }
 
 header ul{
@@ -26,18 +29,25 @@ body {
 .titulo {
     text-align: center;
     font-size: x-large;
-    
+    align-items: center;
+    height: 100vh;
 }
 
 .sobremim {
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(207, 220, 20, 0.1);
 }
 
 .projetos {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .titulo img{
